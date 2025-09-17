@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/loginreg.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="regform">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <div class="input"> <input type="text" id="username" name="username" required></div>
+            <br>
+            <label for="password">Password:</label>
+            <div class="input"><input type="password" id="password" name="password" required> </div>
+            <br>
+            <a href="/frontend/1.html" class="button"><span class="bp">Login</span></a>
+
+
+        </form>
+        <p>Don't have an account? <a href="/frontend/register.html">Register here</a></p>
+
+    </div>
+    
+</body>
+</html>
