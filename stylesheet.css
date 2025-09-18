@@ -201,6 +201,7 @@ body {
 /* ---------- Pequeños toques ---------- */
 small.fw-normal{ letter-spacing: .2px; }
 
+
 /* ====== Encabezado (simple, responsive y sin dependencias) ====== */
 .site-header{
   background: #ffffff;
@@ -282,4 +283,31 @@ small.fw-normal{ letter-spacing: .2px; }
   .btn-auth{
     padding: 8px 12px;
   }
+
+/* ---------- Footer ---------- */
+.app-footer {
+  background: linear-gradient(180deg, var(--glass), var(--glass-strong));
+  border-top: var(--border);
+  box-shadow: 0 -6px 20px rgba(0,0,0,.2);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
+
+.app-footer p {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.footer-links a {
+  color: var(--brand-2);
+  text-decoration: none;
+  transition: color .2s ease;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--brand);
+
+}}
