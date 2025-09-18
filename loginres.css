@@ -11,10 +11,10 @@ body {
 }
 
 .regform {
-    background-color: rgba(22, 22, 22, 0.527);
+    background-color: rgba(194, 175, 200, 0.542);
     padding: 20px 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(157, 148, 148, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;

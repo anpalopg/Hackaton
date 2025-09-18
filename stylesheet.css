@@ -71,7 +71,7 @@ body {
 
 /* ---------- Cards globales ---------- */
 .card{
-  background: linear-gradient(180deg, rgba(#558703), rgba(#558703));
+  background: linear-gradient(180deg, rgba(#7b1a7c), rgba(#6f0387));
   border: var(--border);
   border-radius: 16px;
   box-shadow: var(--shadow-soft);
@@ -85,12 +85,12 @@ body {
 .input-group .form-control{
   padding: .95rem 1rem;
   border-radius: 12px;
-  border-color: rgba(125,139,168,.25);
+  border-color: rgba(63, 14, 209, 0.711);
   background: rgba(255,255,255,.85);
 }
 .input-group .input-group-text{
   border-radius: 12px 0 0 12px;
-  border-color: rgba(125,139,168,.25);
+  border-color: rgba(28, 60, 125, 0.673);
   background: rgba(255,255,255,.6);
 }
 .input-group .btn{ border-radius: 0 12px 12px 0; }
@@ -145,7 +145,7 @@ body {
   background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.72));
 }
 .task-title{ word-break: break-word; }
-.card.border-success{ border-color: color-mix(in oklab, var(--ok) 60%, #86efac) !important; }
+.card.border-success{ border-color: color-mix(in oklab, var(--ok) 60%, #7a22ad) !important; }
 .card.opacity-75 .task-title{ text-decoration: line-through; opacity: .85; }
 
 /* Hover claro para acciones */
@@ -170,7 +170,7 @@ body {
 
 /* ---------- Accesibilidad y foco ---------- */
 :focus-visible{
-  outline: 3px solid color-mix(in oklab, var(--brand) 65%, #fff);
+  outline: 3px solid color-mix(in oklab, var(--brand) 65%, #4f52b6);
   outline-offset: 2px;
   border-radius: 10px;
 }
@@ -202,6 +202,88 @@ body {
 small.fw-normal{ letter-spacing: .2px; }
 
 
+/* ====== Encabezado (simple, responsive y sin dependencias) ====== */
+.site-header{
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}
+
+.site-header .header-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-header .brand{
+  font-weight: 800;
+  font-size: clamp(18px, 2.2vw, 22px);
+  letter-spacing: .2px;
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header .auth-actions{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Botones del header */
+.btn-auth{
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .06s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.btn-auth:active{ transform: translateY(1px); }
+
+/* Variante primaria */
+.btn-auth.solid{
+  background: #2563eb;         /* azul */
+  color: #fff;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37,99,235,.25);
+}
+.btn-auth.solid:hover{
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Variante contorno */
+.btn-auth.outline{
+  background: #fff;
+  color: #333;
+  border-color: rgba(0,0,0,.12);
+}
+.btn-auth.outline:hover{
+  background: #f5f7ff;
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+/* Responsive: compactar en pantallas pequeñas */
+@media (max-width: 576px){
+  .site-header .header-inner{
+    padding: 10px 12px;
+  }
+  .site-header .auth-actions{
+    gap: 8px;
+  }
+  .btn-auth{
+    padding: 8px 12px;
+  }
+
 /* ---------- Footer ---------- */
 .app-footer {
   background: linear-gradient(180deg, var(--glass), var(--glass-strong));
@@ -227,4 +309,5 @@ small.fw-normal{ letter-spacing: .2px; }
 
 .footer-links a:hover {
   color: var(--brand);
-}
+
+}}
