@@ -26,8 +26,8 @@
     --bg: #f2f4ff;
     --bg-2: #ffffff;
     --ink: #14223a;
-    --muted: #5b6b86;
-    --brand: #2b6fff;
+    --muted: #4e03e6;
+    --brand: #4608cd;
     --brand-2: #5b8bff;
     --ok: #1f9e55;
     --danger: #e03131;
@@ -46,9 +46,9 @@ html, body { height: 100%; }
 body {
   color: var(--ink);
   background:
-    radial-gradient(1200px 700px at -10% -10%, rgba(110,168,254,.18), transparent 60%),
-    radial-gradient(1000px 600px at 110% -10%, rgba(91,139,255,.18), transparent 60%),
-    conic-gradient(from 180deg at 50% -20%, #0000 0 25%, rgba(255,255,255,.06) 0 50%, #0000 0 75%, rgba(255,255,255,.04) 0) 0 0/22px 22px,
+    radial-gradient(1200px 700px at -10% -10%, rgb(42, 43, 42), transparent 60%),
+    radial-gradient(1000px 600px at 110% -10%, rgb(70, 17, 95), transparent 60%),
+    conic-gradient(from 180deg at 50% -20%, #540d67 0 25%, rgb(92, 42, 128) 0 50%, #0000 0 75%, rgb(106, 38, 97) 0) 0 0/22px 22px,
     var(--bg);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -71,7 +71,7 @@ body {
 
 /* ---------- Cards globales ---------- */
 .card{
-  background: linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.55));
+  background: linear-gradient(180deg, rgba(#558703), rgba(#558703));
   border: var(--border);
   border-radius: 16px;
   box-shadow: var(--shadow-soft);
