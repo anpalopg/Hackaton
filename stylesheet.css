@@ -311,3 +311,33 @@ small.fw-normal{ letter-spacing: .2px; }
   color: var(--brand);
 
 }}
+
+.banner-principal {
+  width: 114%;           /* ancho completo del contenedor */
+  max-width: 800px;      /* límite máximo para que no crezca demasiado */
+  height: auto;          /* para mantener proporción */
+  margin: 30px auto 40px auto;  /* margen arriba, centrado horizontalmente, margen abajo */
+  display: block;        /* para que margin auto centre bien */
+  border-radius: var(--radius-xl); /* si quieres que tenga bordes redondeados como en el resto */
+  box-shadow: var(--shadow-soft);  /* darle sombra para que destaque */
+}
+
+.Imagen2 {
+  width: 130%;          /* ancho 100% del contenedor padre */
+  max-width: 800px;     /* límite máximo de ancho en píxeles */
+  height: auto;         /* mantener proporción */
+  margin: 29px auto 45px auto;  /* margen: arriba 30px, horizontal auto (centrado), abajo 40px */
+  display: block;       /* para que el margin auto funcione y la centre */
+  border-radius: var(--radius-xl); /* borde redondeado */
+  box-shadow: var(--shadow-soft);  /* sombra */
+}
+
+.ImagenNueva {
+  width: 130%;          /* ancho al 100% del contenedor */
+  max-width: 800px;     /* ancho máximo 700px */
+  height: auto;         /* mantiene proporción */
+  margin: 30px auto 40px auto;  /* margen arriba 20px, centrado horizontal, abajo 30px */
+  display: block;       /* para que el margin auto centre bien */
+  border-radius: var(--radius-xl); /* borde redondeado igual que antes */
+  box-shadow: var(--shadow-soft);  /* sombra suave */
+}
